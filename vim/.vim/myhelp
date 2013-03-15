@@ -1,0 +1,54 @@
+" shift-k to see pydoc for keyword under cursor
+" :make to compile file (if python) or invoke make
+" control + space for completion
+" gf to open import or include
+" #folding
+" zR  Unfold all folded lines in file.
+" za  Open/close (toggle) a folded group of lines.
+" zA  Open a closed fold or close an open fold recursively.
+" zc  Close a folded group of lines.
+" zC  Close all folded lines recursively.
+" zd  Delete a folded line.
+" zD  Delete all folded lines recursively.
+" zE  Eliminate all folded lines in file.
+" zF  Create "N" folded lines.
+" #ctags
+" :tag start-of-tag-name_TAB  Vim supports tag name completion. Start the typing the tag name and then type the TAB key and name completion will complete the tag name for you.
+" :tag /search-string     Jump to a tag name found by a search.
+" ctrl-]  The vim editor will jump into the tag to follow it to a new position in the file or to a new file.
+" ctrl-t  The vim editor will allow the user to jump back a level.
+" (or :pop)
+" :tselect <function-name>    When multiple entries exist in the tags file, such as a function declaration in a header file and a function definition (the function itself), the operator can choose by issuing this command. The user will be presented with all the references to the function and the user will be prompted to enter the number associated with the appropriate one.
+" :tnext  When multiple answers are available you can go to the next answer.
+" :set ignorecase
+" (or :set ic)    The ignore case directive affects tagging.
+" :tags   Show tag stack (history)
+" :4pop   Jump to a particular position in the tag stack (history).
+" (jump to the 4th from bottom of tag stack (history).
+" The command ":pop" will move by default "1" backwards in the stack (history).)
+" or
+" :4tag
+" (jump to the 4th from top of tag stack)
+" :tnext  Jump to next matching tag.
+" (Also short form :tn and jump two :2tnext)
+" :tprevious  Jump to previous matching tag.
+" (Also short form :tp and jump two :2tp)
+" :tfirst     Jump to first matching tag.
+" (Also short form :tf, :trewind, :tr)
+" :tlast  Jump to last matching tag.
+" (Also short form :tl)
+" 
+" :set tags=./tags,./subdir/tags
+" 
+"     Using multiple tag files (one in each directory).
+"     Allows one to specify all tags files in directory tree: set tags=src/**/tags
+"     Use Makefile to generate tags files as well as compile in each directory.
+"#quickfix
+" * :cl display the list of error
+" * :cn jump to the next error
+" * :cp jump to the previous error
+" * :copen open a buffer with the list of error
+" * :cw close it
+
+" to not write out a line terminator on the end of the file use this.
+"set noendofline binary (use this to remove last eof on a file
