@@ -15,7 +15,7 @@ filetype plugin on
 set hlsearch
 set wildmenu
 set wildmode=full
-set hidden 
+set hidden
 set expandtab
 set tabstop=8
 set shiftwidth=4
@@ -78,21 +78,21 @@ map ,, :s/\s*\S*\s\(.*\)/\1/<CR>:nohlsearch<CR>
 map } :cn<CR>
 map { :cp<CR>
 
-" Paste Mode On/Off 
-map <F11> :call Paste_on_off()<CR> 
-set pastetoggle=<F11> 
-  
-let paste_mode = 0 " 0 = normal, 1 = paste 
-func! Paste_on_off() 
-   if g:paste_mode == 0 
-       set paste 
-       let g:paste_mode = 1 
-   else 
-       set nopaste 
-       let g:paste_mode = 0 
-   endif   
-   return 
-endfunc 
+" Paste Mode On/Off
+map <F11> :call Paste_on_off()<CR>
+set pastetoggle=<F11>
+
+let paste_mode = 0 " 0 = normal, 1 = paste
+func! Paste_on_off()
+   if g:paste_mode == 0
+       set paste
+       let g:paste_mode = 1
+   else
+       set nopaste
+       let g:paste_mode = 0
+   endif
+   return
+endfunc
 
 "set path+=$PWD/**
 
@@ -107,7 +107,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1 
+let g:miniBufExplModSelTarget = 1
 set number
 
 let g:xml_syntax_folding=1
@@ -120,3 +120,4 @@ let g:erlang_folding=1
 map <F2> :NERDTree<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e
+set mouse=a
