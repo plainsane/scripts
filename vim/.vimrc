@@ -119,3 +119,4 @@ let g:erlang_folding=1
 
 map <F2> :NERDTree<CR>
 
+autocmd BufWritePre * :%s/\s\+$//e
