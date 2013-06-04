@@ -56,14 +56,14 @@ map <F18> :cnewer<CR>
 map <F8> :bp<CR>
 map <F9> :bn<CR>
 
-map ,# :s/^/# /<CR>:nohlsearch<CR>
-map ,/ :s/^/\/\/ /<CR>:nohlsearch<CR>
-map ,> :s/^/> /<CR>:nohlsearch<CR>
-map ," :s/^/\" /<CR>:nohlsearch<CR>
-map ,% :s/^/% /<CR>:nohlsearch<CR>
-map ,! :s/^/! /<CR>:nohlsearch<CR>
-map ,; :s/^/; /<CR>:nohlsearch<CR>
-map ,- :s/^/-- /<CR>:nohlsearch<CR>
+map ,# :s/^./# &/<CR>:nohlsearch<CR>
+map ,/ :s/^./\/\/ &/<CR>:nohlsearch<CR>
+map ,> :s/^./> &/<CR>:nohlsearch<CR>
+map ," :s/^./\" &/<CR>:nohlsearch<CR>
+map ,% :s/^./% &/<CR>:nohlsearch<CR>
+map ,! :s/^./! &/<CR>:nohlsearch<CR>
+map ,; :s/^./; &/<CR>:nohlsearch<CR>
+map ,- :s/^./-- &/<CR>:nohlsearch<CR>
 map ,c :s/^\/\/\\|^--\\|^> \\|^[#"%!;]//<CR>:nohlsearch<CR>
 " wrapping comments
 map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR>:nohlsearch<CR>
@@ -120,4 +120,5 @@ let g:erlang_folding=1
 map <F2> :NERDTree<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e
-set mouse=a
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
