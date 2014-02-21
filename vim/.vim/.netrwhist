@@ -1,2 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/astovall/src/reflex/umbrella/manifests'
+let g:netrw_dirhist_2='/home/astovall/src/adytum/tessellation'
+let g:netrw_dirhist_3='/home/astovall/src/reflex/rxpkg/init.d'
+let g:netrw_dirhist_4='/home/astovall/src/reflex/buildtools'
+let g:netrw_dirhist_5='/home/astovall/src/reflex/npm-registry'

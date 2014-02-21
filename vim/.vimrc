@@ -121,4 +121,5 @@ map <F2> :NERDTree<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+let g:syntastic_python_checkers=['pyflakes']
 
