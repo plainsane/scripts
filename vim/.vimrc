@@ -119,7 +119,8 @@ let g:erlang_folding=1
 
 map <F2> :NERDTree<CR>
 
-autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType c,cpp,java,php,erlang,python,bash,sh autocmd BufWritePre <buffer> :%s/\s\+$//e
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 let g:syntastic_python_checkers=['pyflakes']
 
